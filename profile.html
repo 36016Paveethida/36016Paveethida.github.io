@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - ประวัติส่วนตัว</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Sarabun', sans-serif; background: #f8fafc; color: #334155; padding-bottom: 40px; }
+        
+        /* แถบเมนูด้านบน */
+        nav { background: #1e293b; padding: 15px; text-align: center; }
+        nav a { color: #f8fafc; text-decoration: none; margin: 0 10px; font-weight: 500; font-size: 0.95rem; }
+        nav a.active { color: #3b82f6; border-bottom: 2px solid #3b82f6; padding-bottom: 4px; }
+        
+        /* พื้นที่เนื้อหาหลัก */
+        .container { 
+            max-width: 700px; 
+            margin: 40px auto; 
+            background: #fff; 
+            padding: 50px 40px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+            text-align: center;
+        }
+        
+        h1 { color: #1e3a8a; font-size: 2rem; border-bottom: 3px solid #2563eb; padding-bottom: 10px; margin-bottom: 30px; display: inline-block; }
+        
+        /* ส่วนรูปภาพตรงกลาง */
+        .profile-img-box { margin-bottom: 30px; }
+        .profile-img-box img {
+            width: 250px;
+            height: auto;
+            border-radius: 12px;
+            border: 3px solid #3b82f6;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        
+        /* กล่องข้อมูลทั่วไป */
+        .info-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 5px solid #3b82f6;
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .info-card h2 { font-size: 1.2rem; color: #1e3a8a; margin-bottom: 12px; }
+        .info-card p { font-size: 1.05rem; color: #334155; line-height: 1.8; margin-bottom: 6px; }
+        .info-card p:last-child { margin-bottom: 0; }
+        
+        /* กล่องประวัติการศึกษา */
+        .education-card {
+            background: #f0f9ff;
+            border: 1px solid #bae6fd;
+            border-left: 5px solid #0284c7;
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .education-card h2 { font-size: 1.2rem; color: #0369a1; margin-bottom: 12px; }
+        .education-card p { font-size: 1.05rem; color: #0c4a6e; line-height: 1.8; margin-bottom: 8px; }
+        .education-card p:last-child { margin-bottom: 0; }
 
+        /* กล่องข้อดี */
+        .advantage-card {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-left: 5px solid #22c55e;
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .advantage-card h2 { font-size: 1.2rem; color: #15803d; margin-bottom: 8px; }
+        .advantage-card p { font-size: 1.05rem; color: #166534; line-height: 1.7; }
+        
+        /* กล่องจุดที่กำลังพัฒนา */
+        .improvement-card {
+            background: #fffbe2;
+            border: 1px solid #fef08a;
+            border-left: 5px solid #eab308;
+            padding: 20px 25px;
+            border-radius: 8px;
+            text-align: left;
+        }
+        .improvement-card h2 { font-size: 1.2rem; color: #a16207; margin-bottom: 8px; }
+        .improvement-card p { font-size: 1.05rem; color: #854d0e; line-height: 1.7; }
+    </style>
+</head>
+<body>
+
+<!-- เมนูเปลี่ยนหน้า -->
+<nav>
+    <a href="index.html">หน้าปก</a>
+    <a href="intro.html">คำนำ</a>
+    <a href="profile.html" class="active">ประวัติส่วนตัว</a>
+    <a href="education.html">ความสนใจศึกษาต่อ</a>
+    <a href="activities.html">กิจกรรม</a>
+    <a href="skills.html">ความสามารถพิเศษ</a>
+</nav>
+
+<div class="container">
+    <h1>ประวัติส่วนตัว</h1>
+    
+    <!-- 1. รูปภาพ -->
+    <div class="profile-img-box">
+        <img src="IMG_1986.jpeg" alt="รูปโปรไฟล์">
+    </div>
+    
+    <!-- 2. ข้อมูลส่วนตัว -->
+    <div class="info-card">
+        <h2>ข้อมูลทั่วไป</h2>
+        <p><strong>ชื่อ-นามสกุล:</strong> นางสาวปวีณ์ธิดา นาลาด </p>
+        <p><strong>ชื่อเล่น:</strong> โดนัท</p>
+        <p><strong>อายุ:</strong> 18 ปี</p>
+        <p><strong>วัน/เดือน/ปีเกิด:</strong> 22 มกราคม พ.ศ.2551</p>
+        <p><strong>โรงเรียนปัจจุบัน:</strong> โรงเรียนบ้านบึง “อุตสาหกรรมนุเคราะห์”</p>
+        <p><strong>เชื้อชาติ:</strong> ไทย | <strong>สัญชาติ:</strong> ไทย | <strong>ศาสนา:</strong> พุทธ</p>
+    </div>
+
+    <!-- 3. ประวัติการศึกษา -->
+    <div class="education-card">
+        <h2> ประวัติการศึกษา</h2>
+        <p><strong>ระดับอนุบาล :</strong> โรงเรียนนารานุบาล</p>
+        <p><strong>ระดับประถมศึกษา :</strong> โรงเรียนนารานุบาล</p>
+        <p><strong>ระดับมัธยมศึกษาตอนต้น :</strong> โรงเรียนบ้านบึง “อุตสาหกรรมนุเคราะห์”</p>
+        <p><strong>ระดับมัธยมศึกษาตอนปลาย :</strong> โรงเรียนบ้านบึง “อุตสาหกรรมนุเคราะห์”</p>
+    </div>
+
+    <!-- 4. งานอดิเรก -->
+    <div class="info-card">
+        <h2> งานอดิเรก</h2>
+        <p>ฟังเพลง ดูภาพยนตร์ อ่านเรื่องราวที่สนใจ และเรียนรู้สิ่งใหม่ ๆ ในเวลาว่าง รวมถึงชอบทำกิจกรรมที่ได้ใช้ความคิดสร้างสรรค์และพัฒนาตัวเอง</p>
+    </div>
+
+    <!-- 5. ข้อดี -->
+    <div class="advantage-card">
+        <h2>ข้อดี</h2>
+        <p>เป็นคนมีความคิดสร้างสรรค์ สามารถวางแผนและแบ่งงานออกเป็นขั้นตอนได้ดี มีความรับผิดชอบและสามารถปรับตัวตามสถานการณ์ได้ รวมถึงเป็นคนที่พร้อมเรียนรู้และพัฒนาตัวเองอยู่เสมอ</p>
+    </div>
+
+    <!-- 6. จุดที่กำลังพัฒนา -->
+    <div class="improvement-card">
+        <h2> จุดที่กำลังพัฒนา</h2>
+        <p>พยายามลดความผลัดวันประกันพรุ่งและมีความกระตือรือร้นในการทำงานให้มากขึ้น รวมถึงตรวจสอบรายละเอียดของงานให้รอบคอบมากกว่าเดิม เพื่อให้งานมีความถูกต้องและสมบูรณ์ยิ่งขึ้น</p>
+    </div>
+</div>
+
+</body>
+</html>
