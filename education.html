@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - ความสนใจศึกษาต่อ</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Sarabun', sans-serif; background: #f8fafc; color: #334155; padding-bottom: 40px; }
+        
+        /* แถบเมนูด้านบน */
+        nav { background: #1e293b; padding: 15px; text-align: center; }
+        nav a { color: #f8fafc; text-decoration: none; margin: 0 10px; font-weight: 500; font-size: 0.95rem; }
+        nav a.active { color: #3b82f6; border-bottom: 2px solid #3b82f6; padding-bottom: 4px; }
+        
+        /* พื้นที่เนื้อหาหลัก */
+        .container { 
+            max-width: 800px; 
+            margin: 40px auto; 
+            background: #fff; 
+            padding: 50px 40px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+        }
+        
+        h1 { color: #1e3a8a; font-size: 2rem; border-left: 5px solid #2563eb; padding-left: 15px; margin-bottom: 30px; }
+        
+        /* รูปภาพประกอบบทความ */
+        .featured-img-box {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .featured-img-box img {
+            width: 320px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 3px solid #3b82f6;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        
+        /* เนื้อหาความสนใจ */
+        .article-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 5px solid #3b82f6;
+            padding: 25px 30px;
+            border-radius: 8px;
+            margin-bottom: 35px;
+        }
+        .article-card p {
+            font-size: 1.1rem;
+            line-height: 1.85;
+            color: #334155;
+            text-align: justify;
+            text-indent: 2.5em;
+            margin-bottom: 15px;
+        }
+        .article-card p:last-child { margin-bottom: 0; }
 
+        /* ส่วนสถาบันและคณะที่สนใจ */
+        .target-section {
+            background: #f0f9ff;
+            border: 1px solid #bae6fd;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        
+        /* ช่องใส่รูปตราสัญลักษณ์มหาวิทยาลัย */
+        .uni-img-box {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .uni-img-box img {
+            max-width: 260px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #cbd5e1;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .faculty-title {
+            text-align: center;
+            font-size: 1.4rem;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px dashed #bae6fd;
+        }
+
+        /* รายการสาขาวิชาต่อเรียงลงมา */
+        .major-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .major-item {
+            background: #fff;
+            border-left: 5px solid #0284c7;
+            border-top: 1px solid #e2e8f0;
+            border-right: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 18px 25px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+        }
+        .major-item h3 {
+            font-size: 1.15rem;
+            color: #0369a1;
+            margin-bottom: 6px;
+        }
+        .major-item p {
+            font-size: 1rem;
+            color: #475569;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<!-- เมนูเปลี่ยนหน้า -->
+<nav>
+    <a href="index.html">หน้าปก</a>
+    <a href="intro.html">คำนำ</a>
+    <a href="profile.html">ประวัติส่วนตัว</a>
+    <a href="education.html" class="active">ความสนใจศึกษาต่อ</a>
+    <a href="activities.html">กิจกรรม</a>
+    <a href="skills.html">ความสามารถพิเศษ</a>
+</nav>
+
+<div class="container">
+    <h1>ความสนใจในการศึกษาต่อ</h1>
+    
+    <!-- 1. รูปภาพประกอบบทความ -->
+    <div class="featured-img-box">
+        <img src="IMG_1986.jpeg" alt="รูปประกอบความสนใจ">
+    </div>
+
+    <!-- 2. แรงบันดาลใจและความสนใจ -->
+    <div class="article-card">
+        <p>ในฐานะนักเรียนมัธยมศึกษาปีที่ 6 ซึ่งกำลังอยู่ในช่วงเวลาสำคัญของชีวิตที่ต้องเลือกเส้นทางอนาคตอย่างจริงจัง ข้าพเจ้ามีความสนใจในอาชีพด้านวิศวกรรมอุตสาหการและโลจิสติกส์ เนื่องจากข้าพเจ้าสนใจการวางแผน การจัดการ และการแก้ไขปัญหาอย่างเป็นระบบ รวมถึงมีความสนใจว่าการทำงานในแต่ละขั้นตอนสามารถพัฒนาให้มีประสิทธิภาพมากยิ่งขึ้นได้อย่างไร
+
+<p></p>ข้าพเจ้ามองว่าวิศวกรรมอุตสาหการและโลจิสติกส์ไม่ได้เกี่ยวข้องเพียงแค่การทำงานในโรงงานหรือการขนส่งสินค้าเท่านั้น แต่ยังครอบคลุมถึงการวางแผนกระบวนการทำงาน การบริหารทรัพยากร การลดต้นทุนและความสูญเสีย รวมถึงการนำข้อมูลมาวิเคราะห์เพื่อช่วยในการตัดสินใจ ซึ่งเป็นสิ่งที่มีความสำคัญต่อการดำเนินงานขององค์กรและธุรกิจในปัจจุบัน</p>
+
+ด้วยเหตุผลนี้ ข้าพเจ้าจึงสนใจที่จะศึกษาต่อในสาขาวิศวกรรมอุตสาหการและโลจิสติกส์ เพื่อพัฒนาความรู้และทักษะด้านการวางแผน การวิเคราะห์ และการแก้ไขปัญหาอย่างเป็นระบบ และนำความรู้ที่ได้รับไปประยุกต์ใช้ในการทำงาน รวมถึงพัฒนาตนเองให้สามารถประกอบอาชีพและสร้างประโยชน์ให้กับองค์กรได้อย่างมีประสิทธิภาพในอนาคต</p>
+        <p>ด้วยเหตุผลนี้ ข้าพเจ้าจึงสนใจที่จะศึกษาต่อและพัฒนาความรู้ด้านการบัญชี เพื่อให้มีความเข้าใจเกี่ยวกับธุรกิจมากยิ่งขึ้น และสามารถนำความรู้ไปใช้ในการประกอบอาชีพในอนาคตได้อย่างมีประสิทธิภาพ</p>
+    </div>
+
+    <!-- 3. คณะ/สาขา/มหาวิทยาลัย ที่สนใจ -->
+    <div class="target-section">
+        
+        <!-- ช่องใส่รูปตราสัญลักษณ์มหาวิทยาลัย -->
+        <div class="uni-img-box">
+            <img src="IMG_3290.jpeg" alt="ตราสัญลักษณ์มหาวิทยาลัย">
+        </div>
+
+        <!-- ชื่อมหาวิทยาลัย -->
+        <h2 class="faculty-title"> มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h2>
+        
+        <!-- รายการสาขาวิชาเรียงต่อกันลงมา -->
+        <div class="major-list">
+            
+            <div class="major-item">
+                <h3>1.สาขาวิศวกรรมอุตสาหการ </h3>
+                <p>หลักสูตรวศ.บ.วิศวกรรมอุตสาหการ (ภาษาไทย ปกติ) วิทยาเขต ระยอง</p>
+            </div>
+
+            <div class="major-item">
+                <h3>2. สาขาวิศวกรรมโลจิสติกส์</h3>
+                <p>หลักสูตรวศ.บ.วิศวกรรมโลจิสติกส์ (ภาษาไทย ปกติ) วิทยาเขต ระยอง </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
