@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - ความสามารถพิเศษ</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Sarabun', sans-serif; background: #f8fafc; color: #334155; padding-bottom: 40px; }
+        
+        /* แถบเมนูด้านบน */
+        nav { background: #1e293b; padding: 15px; text-align: center; }
+        nav a { color: #f8fafc; text-decoration: none; margin: 0 10px; font-weight: 500; font-size: 0.95rem; }
+        nav a.active { color: #3b82f6; border-bottom: 2px solid #3b82f6; padding-bottom: 4px; }
+        
+        /* พื้นที่เนื้อหาหลัก */
+        .container { 
+            max-width: 700px; 
+            margin: 40px auto; 
+            background: #fff; 
+            padding: 50px 40px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+            text-align: center;
+        }
+        
+        h1 { color: #1e3a8a; font-size: 2rem; border-bottom: 3px solid #2563eb; padding-bottom: 10px; margin-bottom: 35px; display: inline-block; }
+        
+        /* ช่องใส่รูปภาพขนาดกำลังพอดี */
+        .skill-img-box {
+            margin-bottom: 30px;
+        }
+        .skill-img-box img {
+            width: 300px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 3px solid #3b82f6;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        
+        /* กล่องข้อความเรียงยาวต่อกัน */
+        .skill-content {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 5px solid #3b82f6;
+            padding: 25px 30px;
+            border-radius: 8px;
+            text-align: left;
+        }
+        .skill-content p {
+            font-size: 1.1rem;
+            line-height: 2;
+            color: #334155;
+            margin-bottom: 10px;
+        }
+        .skill-content p:last-child { margin-bottom: 0; }
+    </style>
+</head>
+<body>
 
+<!-- เมนูเปลี่ยนหน้า -->
+<nav>
+    <a href="index.html">หน้าปก</a>
+    <a href="intro.html">คำนำ</a>
+    <a href="profile.html">ประวัติส่วนตัว</a>
+    <a href="education.html">ความสนใจศึกษาต่อ</a>
+    <a href="activities.html">กิจกรรม</a>
+    <a href="skills.html" class="active">ความสามารถพิเศษ</a>
+</nav>
+
+<div class="container">
+    <h1>ความสามารถพิเศษ</h1>
+    
+    <!-- รูปภาพ IMG_1889.jpeg ขนาดพอดี -->
+    <div class="skill-img-box">
+        <img src="IMG_1889.jpeg" alt="ความสามารถพิเศษ">
+    </div>
+
+    <!-- ข้อความเรียงยาวต่อกันลงมา -->
+    <div class="skill-content">
+        <p>• ร้องเพลง 🎤 </p>
+        <p>• แบดมินตัน 🏸</p> 
+        <p>• ว่ายน้ำ 🏊‍♀️</p>
+        <p>• ภาษาอังกฤษ 🗣️💬 </p>
+    
+    </div>
+</div>
+
+</body>
+</html>
