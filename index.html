@@ -1,30 +1,85 @@
-<!-- นี่คือโครงสร้างหน้าเว็บทั้งหมด -->
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<title>หน้าแนะนำตัวของฉัน</title>
-<style>
-body {
-background-color: lightpink; color: #333;
-text-align: center; padding: 50px;
-}
-.card {
-background: white; border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-max-width: 500px; margin: 0 auto; padding: 30px;
-}
-h1 { color: #2c3e50; }
-p { font-size: 18px; line-height: 1.6; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - หน้าปก</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Sarabun', sans-serif; background: #f8fafc; color: #334155; padding-bottom: 40px; }
+        
+        /* แถบเมนูด้านบน */
+        nav { background: #1e293b; padding: 15px; text-align: center; }
+        nav a { color: #f8fafc; text-decoration: none; margin: 0 10px; font-weight: 500; font-size: 0.95rem; }
+        nav a.active { color: #3b82f6; border-bottom: 2px solid #3b82f6; padding-bottom: 4px; }
+        
+        /* พื้นที่เนื้อหาหลัก */
+        .container { max-width: 800px; margin: 40px auto; background: #fff; padding: 50px 30px; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        
+        /* กล่องข้อมูลแนะนำตัว */
+        .info-box { 
+            background: #f0f9ff; 
+            padding: 25px; 
+            border-radius: 10px; 
+            display: block; 
+            text-align: left; 
+            border: 1px solid #bae6fd; 
+            margin: 0 auto 20px auto;
+            max-width: 500px;
+        }
+        .info-box h2 { font-size: 1.25rem; color: #0369a1; margin-bottom: 12px; border-bottom: 2px solid #bae6fd; padding-bottom: 5px; }
+        .info-box p { font-size: 1.05rem; color: #0369a1; margin-bottom: 8px; line-height: 1.6; }
+        
+        /* กล่องช่องทางติดต่อ */
+        .contact-box { 
+            background: #f0fdf4; 
+            padding: 25px; 
+            border-radius: 10px; 
+            display: block; 
+            text-align: left; 
+            border: 1px solid #bbf7d0; 
+            margin: 0 auto;
+            max-width: 500px;
+        }
+        .contact-box h2 { font-size: 1.25rem; color: #15803d; margin-bottom: 12px; border-bottom: 2px solid #bbf7d0; padding-bottom: 5px; }
+        .contact-box p { font-size: 1.05rem; color: #166534; margin-bottom: 10px; }
+        .contact-box a { color: #16a34a; text-decoration: none; font-weight: 600; }
+        .contact-box a:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
-<div class="card">
-<h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน </h1>
-<p>สวัสดีค่ะ! หนูชื่อ <strong>ปวีณ์ธิดา นาลาด(Paveethida Nalad)</strong></p>
-<p>ขณะนี้กำลังศึกษา/สนใจด้าน Computer Science & Engineering</p>
-<p>นี่คือเว็บไซต์แรกของผมที่โฮสต์บน GitHub Pages!</p>
-  <a href="portfolio.html" style="display:inline-block; background:#3498db; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:15px;">👉 ดูแฟ้มสะสมงานของหนู</a>
+
+<!-- เมนูเปลี่ยนหน้า -->
+<nav>
+    <a href="index.html" class="active">หน้าปก</a>
+    <a href="intro.html">คำนำ</a>
+    <a href="profile.html">ประวัติส่วนตัว</a>
+    <a href="education.html">ความสนใจศึกษาต่อ</a>
+    <a href="activities.html">กิจกรรม</a>
+    <a href="skills.html">ความสามารถพิเศษ</a>
+</nav>
+
+<div class="container">
+    <!-- แสดงรูปตามสัดส่วนจริง ย่อขนาดความกว้างเหลือ 380px -->
+    <img src="IMG_8695.jpeg" alt="รูปโปรไฟล์" style="width: 380px; max-width: 100%; height: auto; border-radius: 12px; border: 3px solid #3b82f6; margin-bottom: 25px;">
+    
+    <!-- แนะนำตัว -->
+    <div class="info-box">
+        <h2> แนะนำตัว</h2>
+        <p><strong>ชื่อ-นามสกุล:</strong> นางสาวปวีณ์ธิดา นาลาด</p>
+        <p><strong>สถานะ:</strong> นักเรียนชั้นมัธยมศึกษาปีที่ 6</p>
+        <p><strong>สายการเรียน:</strong> วิทยาศาสตร์-คณิตศาสตร์ เตรียมวิศวะ</p>
+        <p><strong>โรงเรียน:</strong> โรงเรียนบ้านบึง “อุตสาหกรรมนุเคราะห์”</p>
+    </div>
+
+    <!-- ช่องทางติดต่อ -->
+    <div class="contact-box">
+        <h2> ช่องทางการติดต่อ</h2>
+        <p> <strong>Instagram :</strong> <a href="https://www.instagram.com/pxve3thxdx._?stkn=MWd4OXY1ZTYwZ3FrYw==" target="_blank">pxve3thxdx._</a></p>
+        <p> <strong>Facebook :</strong> <a href="https://facebook.com" target="_blank">Mÿ Pxvēethïdx</a></p>
+        <p> <strong>Gmail :</strong> <a href="mailto:s36016@banbung.ac.th">s36016@banbung.ac.th</a></p>
+    </div>
 </div>
+
 </body>
 </html>
